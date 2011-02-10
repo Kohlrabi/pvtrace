@@ -48,8 +48,8 @@ class CSGadd(object):
         
     def append_transform(self, new_transform):
         self.transform = tf.concatenate_matrices(new_transform, self.transform)
-        self.ADDone.transform = tr.concatenate_matrices(new_transform, self.ADDone.transform)
-        self.ADDtwo.transform = tr.concatenate_matrices(new_transform, self.ADDtwo.transform)
+        self.ADDone.transform = tf.concatenate_matrices(new_transform, self.ADDone.transform)
+        self.ADDtwo.transform = tf.concatenate_matrices(new_transform, self.ADDtwo.transform)
         
     def contains(self, point):
         """
